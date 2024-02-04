@@ -37,3 +37,10 @@ macOS and Linux/UNIX Users: If python points to an earlier version, try using py
 With Python installed and configured, you're ready to set up your project's environment and install its dependencies.
 
 ## Run python
+
+### Run from CMD
+
+1. Navigate to file location you want to run 
+2. Run the command "python <file_name>.py"
+
+![run_python_from_cmd Image](/images/run_python_from_cmd.png) 
