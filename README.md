@@ -36,6 +36,30 @@ macOS and Linux/UNIX Users: If python points to an earlier version, try using py
 
 With Python installed and configured, you're ready to set up your project's environment and install its dependencies.
 
+## Pipenv installation and configuration
+Pipenv is a dependency manager for Python projects which we use to manage the project's dependencies and to create a virtual environment. Follow these steps to set up your environment with Pipenv.
+
+### Prerequisites
+Ensure you have Python and pip installed on your system. Pipenv requires Python 3.x.
+
+### Install Pipenv
+If you haven't installed Pipenv yet, install it globally using pip. This ensures that you can use Pipenv from any directory in your system.
+"pip install pipenv"
+
+### Installing Project Dependencies
+Once Pipenv is installed, navigate to the project's root directory (where the Pipfile is located) and install the project dependencies as follows:
+"pipenv install"
+
+This command reads the Pipfile, installs the required dependencies, and creates a Pipfile.lock which is used to produce deterministic builds. The Pipfile.lock ensures that the same versions of the dependencies are installed on every machine the project runs on.
+
+### Activating the Virtual Environment
+To activate the project's virtual environment, use the pipenv shell command. This ensures that you are using the project-specific versions of Python and installed packages, isolated from your global Python environment.
+"pipenv shell"
+
+### Exiting the Virtual Environment
+When you're done working on the project, you can exit the virtual environment by simply typing:
+"exit" or by pressing Ctrl+D in most terminal emulators.
+
 ## Run python
 
 ### Run from CMD
